@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Searched Movies</title>
+</head>
+<body>
+    <% result.data.Search.forEach(function (movie) { %>
+        <h2> <%= movie.Title %></h2>
+        <h2> <%= movie.Year %></h2>
+        <a href="/movies/<%= movie.imdbID %>"> Click here for more details</a>
+        <hr />
+    <% }); %>
+</body>
+</html>

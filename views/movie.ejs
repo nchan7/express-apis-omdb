@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Info</title>
+</head>
+<body>
+    
+        <h3> Title: <%= result.data.Title %></h3>
+        <h3> Year: <%= result.data.Year %></h3>
+        <h3> Rotten Tomatoes Score: <%= result.data.Ratings[1].Value %></h3>
+        <h3> Rated: <%= result.data.Rated %></h3>
+        <h4> Released: <%= result.data.Released %></h4>
+        <h4> Length: <%= result.data.Runtime %></h4>
+        <p> Genre: <%= result.data.Genre %></p>
+        <p> Director: <%= result.data.Director %></p>
+        <p> Actors: <%= result.data.Actors %></p>
+        
+        <hr />
+    
+</body>
+</html>
